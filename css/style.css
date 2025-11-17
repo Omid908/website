@@ -220,7 +220,7 @@ nav{
   height: 20px;
 }
 .testimonials-container{
-    background-image: url(images/Vector\ -BG.png);
+    background-image: url('images/Vector -BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -228,17 +228,21 @@ nav{
     align-items: center;
     gap: 100px;
     flex-wrap: wrap;
-    padding: 20px;
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
 }
 .review{
     display: flex;
     align-items: center;
     gap: 10px;
+    flex: 1 1 300px;
+    max-width: 700px;
 }
 .answer{
     width: 100%;
     max-width: 460px;
-    background-color: var(--review-card-bg-color);
+    background-color: #403B45;
     border-radius: 15px;
     border: none;
     font-family: 'Inter';
@@ -246,12 +250,13 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    min-height: 170px;
-    height: auto;
+    min-height: 280px;
+    box-sizing: border-box;
 }
 #answer_p1{
     color: var(--text-whitesmoke);
     font-size: 16px;
+    margin-bottom: 20px;
 }
 #first_customer{
     border-radius: 50%;
@@ -259,6 +264,9 @@ nav{
     height: 48px;
     border: 1.7px solid var(--text-whitesmoke);
     object-fit: cover;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .image{
     display: flex;
@@ -273,7 +281,7 @@ nav{
 }
 #tag{
     font-size: 12px;
-    color: var(--text-gray);
+    color: #919191;
     margin-top: 8px;
 }
 .btn {

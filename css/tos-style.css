@@ -101,7 +101,9 @@ main{
     display: block;
     background: var(--tos-bg);
     border-radius: 16px;
-    overflow: hidden; /* outer container clips rounded corners */
+    overflow: hidden; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178);
+    position: relative;
 }
 
 .tos-scroll{
@@ -285,4 +287,10 @@ footer{
 
 #active-link{
     color:var(--text-white-hex)
+}
+
+.lock-icon{
+    position:absolute;
+    transform: translateY(-30px);
+    right: 0;
 }
